@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-size: 2em;
+    color: white;
+    padding: 2vh;
+    background-color: #16423C;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #6A9C89;
+}
+
+.container1 {
+    height: 86vh;
+}
+
+.container1 h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 125px;
+    border-bottom: 2px solid #C4DAD2;
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container1 p {
+    text-align: center;
+    font-size: 2em;
+    width: 70vh;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container1 img {
+    width: 100px;
+    padding-top: 15vh;
+    animation: bounce 3s infinite;
+    cursor: pointer;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+.dImg {
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+    height: 100vh;
+}
+
+#DHCP {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 2px solid #C4DAD2;
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#DNS {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 2px solid #C4DAD2;
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#S {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 2px solid #C4DAD2;
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#R {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 2px solid #C4DAD2;
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DHCPCONTAINER {
+    display: flex;
+    border: 1px solid black;
+    width: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    background-color: #C4DAD2;
+}
+
+.img img {
+    height: 100%;
+    width: 70vh;
+}
+
+.TXT p {
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.footer {
+    height: 25vh;
+    background-color: #16423C;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    position: relative; 
+    padding: 10px 0; 
+    display: inline-block; 
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+    z-index: 1; 
+  }
+  
+  
+  .navbar a:hover::after {
+    width: 100%; 
+  }
+

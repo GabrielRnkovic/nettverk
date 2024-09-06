@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettverk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="index.html"><p>Nettverk</p></a></li>
+            <li><a href="#DHCP">DHCP</a></li>
+            <li><a href="#DNS">DNS</a></li>
+            <li><a href="#R">Router</a></li>
+            <li><a href="#S">Switch</a></li>
+        </ul>
+    </div>
+    <div class="container1">
+        <h1>Lær deg om nettverk</h1>
+        <p>På denne nettsiden kan du lese om forskjellige ting innenfor nettverk. Du vil lære hvordan DHCP fungerer, hvordan DNS fungerer, hvordan er router fungerer, hvordan en switch fungerer</p>
+        <div class="dImg">
+        <a href="#DHCP"><img src="Bilder/arrow-down-icon-png-6687.png" alt=""></a>
+
+    </div>
+    </div>
+    <div class="container2"> 
+        <h1 id="DHCP">DHCP</h1>
+        <div class="DHCPCONTAINER">
+            <div class="TXT">
+                <p>
+                    DHCP er en tjeneste som gjør det enklere å administrere IP-adresser i et nettverk. Her er hvordan det fungerer:
+
+                    IP-adressetildeling:
+                    Når en enhet (for eksempel en datamaskin eller telefon) kobler seg til nettverket, trenger den en IP-adresse for å kommunisere med andre enheter.
+                    I stedet for manuelt å tildele en fast IP-adresse til hver enhet, lar DHCP-serveren oss tildele dem dynamisk.
+                    Hvordan fungerer DHCP?:
+                    Når enheten starter opp, sender den en “DHCP Discovery”-forespørsel til nettverket.
+                    DHCP-serveren svarer med en ledig IP-adresse og andre nettverksinnstillinger (som gateway og DNS-servere).
+                    Enheten godtar denne tildelte IP-adressen og bruker den for kommunikasjon.
+                    Fordeler med DHCP:
+                    Automatisering: Ingen manuell konfigurasjon av IP-adresser.
+                    Fleksibilitet: Enheter kan få forskjellige IP-adresser hver gang de kobler seg til.
+                    Sentralisert administrasjon: Alt styres av DHCP-serveren.
+                    DHCP-relé:
+                    Hvis nettverket har flere segmenter (for eksempel VLAN), brukes en DHCP-relé for å videreformidle DHCP-forespørsler til DHCP-serveren.
+                    Reléet sørger for at enheter på forskjellige nettverkssegmenter får riktig IP-adresse.
+                    Så, tenk på DHCP som en vennlig nabo som gir ut midlertidige parkeringsplasser til alle besøkende i nabolaget ingen stress med å finne en ledig plass selv!
+            </p>
+            </div>
+            <div class="img">
+                <img src="Bilder/DHCP.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 id="DNS">DNS</h1>
+        <div class="DHCPCONTAINER">
+            <div class="TXT">
+                <p>
+                    DNS er Navn til IP-adresse-oversettelse:
+                    Når du skriver inn et nettsted i nettleseren din (f.eks., “www.google.com”), trenger datamaskinen din å finne ut hvilken IP-adresse som hører til dette navnet.
+                    DNS hjelper til med å oversette det menneskelesbare nettstednavnet til en numerisk IP-adresse som datamaskiner forstår.
+                    DNS-servere:
+                    DNS-servere er som vaktmestere for denne telefonkatalogen. De har en stor liste over nettstednavn og deres tilhørende IP-adresser.
+                    Når du skriver inn et nettstednavn, sender datamaskinen din en forespørsel til en DNS-server og spør: “Hva er IP-adressen til dette nettstedet?”
+                    Caching og Hierarki:
+                    DNS-servere er organisert i et hierarki. Noen er store og mektige (de kalles rotservere), mens andre er mindre og lokale.
+                    Når du besøker et nettsted, lagrer datamaskinen din (og lokale DNS-servere) denne oversettelsen i en midlertidig cache. Dette gjør fremtidige besøk raskere.
+                    DNS-oppslag:
+                    Når du skriver inn et nettstednavn, sjekker datamaskinen din først sin egen cache. Hvis den ikke finner svaret der, spør den en lokal DNS-server.
+                    Den lokale DNS-serveren kan enten svare direkte eller spørre en større DNS-server. Dette fortsetter helt opp til rotserverne, som gir det endelige svaret.
+                    Resultatet:
+                    Til slutt får datamaskinen din den riktige IP-adressen for nettstedet, og du kan besøke det.
+                    Så, tenk på DNS som internettets postmann som leverer brev (nettstednavn) til riktig adresse (IP-adresse)
+            </p>
+            </div>
+            <div class="img">
+                <img src="Bilder/DNS.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 id="R">Router</h1>
+        <div class="DHCPCONTAINER">
+            <div class="TXT">
+                <p>
+                    En router er som en trafikkregulator for internettet. Den sørger for at data kan flyte mellom ulike enheter i nettverket ditt. Her er en kort forklaring:
+
+                    Forbindelse mellom Internett og Dine Enheter:
+                    Routeren gir deg en IP-adresse fra internettleverandøren din (ISP). Den fungerer som et husnummer på internett.
+                    Den oppretter også et lokalt nettverk hjemme hos deg, der alle enhetene dine kobler seg til.
+                    NAT (Network Address Translation):
+                    Når du besøker et nettsted, oversetter routeren den lokale IP-adressen til den offentlige IP-adressen. Dette kalles NAT.
+                    Routeren lar flere enheter dele én offentlig IP-adresse.
+                    Trådløst Nettverk (Wi-Fi):
+                    Routeren sender Wi-Fi-signaler, slik at du kan koble telefoner, nettbrett og andre enheter trådløst til internett.
+                    Sikkerhet og Brannmur:
+                    Routeren har en innebygd brannmur som beskytter nettverket ditt mot uønsket trafikk og angrep.
+                    Husk å endre standardinnstillingene for å ivareta sikkerheten.
+                    Så, tenk på routeren som en digital trafikkregulator som holder orden på hvem som kan komme inn og ut av nabolaget ditt på internett!
+            </p>
+            </div>
+            <div class="img">
+                <img src="Bilder/Router.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 id="S">Switch</h1>
+        <div class="DHCPCONTAINER">
+            <div class="TXT">
+                <p>
+                    DHCP er en tjeneste som gjør det enklere å administrere IP-adresser i et nettverk. Her er hvordan det fungerer:
+
+                    IP-adressetildeling:
+                    Når en enhet (for eksempel en datamaskin eller telefon) kobler seg til nettverket, trenger den en IP-adresse for å kommunisere med andre enheter.
+                    I stedet for manuelt å tildele en fast IP-adresse til hver enhet, lar DHCP-serveren oss tildele dem dynamisk.
+                    Hvordan fungerer DHCP?:
+                    Når enheten starter opp, sender den en “DHCP Discovery”-forespørsel til nettverket.
+                    DHCP-serveren svarer med en ledig IP-adresse og andre nettverksinnstillinger (som gateway og DNS-servere).
+                    Enheten godtar denne tildelte IP-adressen og bruker den for kommunikasjon.
+                    Fordeler med DHCP:
+                    Automatisering: Ingen manuell konfigurasjon av IP-adresser.
+                    Fleksibilitet: Enheter kan få forskjellige IP-adresser hver gang de kobler seg til.
+                    Sentralisert administrasjon: Alt styres av DHCP-serveren.
+                    DHCP-relé:
+                    Hvis nettverket har flere segmenter (for eksempel VLAN), brukes en DHCP-relé for å videreformidle DHCP-forespørsler til DHCP-serveren.
+                    Reléet sørger for at enheter på forskjellige nettverkssegmenter får riktig IP-adresse.
+                    Så, tenk på DHCP som en vennlig nabo som gir ut midlertidige parkeringsplasser til alle besøkende i nabolaget – ingen stress med å finne en ledig plass selv!
+            </p>
+            </div>
+            <div class="img">
+                <img src="Bilder/SWITCH.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+</html>
